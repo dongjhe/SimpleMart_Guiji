@@ -423,10 +423,25 @@ main{
             }
             .blockright{
                 padding:0;
+                .byright{
+                    @include span(14 );
+                    height: 50px;
+                    button{
+                        padding:0 3%;
+                        display: block;
+                        width: 100%;
+                        @extend %button-setting;
+                        background-color: $purple_color;
+                        color: $white_color;
+                        @include adjust-font-size-to(nth($font-list, 4),5 );
+                        cursor: pointer;
+                    }
+                }
                 .monylist{
                     display: block;
-                    width: 100%;
-                    float: none;
+                    height: 50px;
+                    @include span(14 nest);
+                    // float: none;
                     div{
                         text-align: right;
                         padding:0 3%;                   
@@ -447,8 +462,10 @@ main{
                         color: #ef2d66;
                         margin-left: 5px;
                         span{
-                            @include adjust-font-size-to(nth($font-list, 7) );
-                            letter-spacing: -1px;
+                            // @include adjust-font-size-to(nth($font-list, 7) );
+                            font-size: 36px;
+                            line-height: 50px;
+                            // letter-spacing: -1px;
                             font-family:"Lato","Century Gothic";
                             font-weight: bold;
                         }

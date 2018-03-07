@@ -85,7 +85,7 @@ header .content .prev, header .content .login ul, header nav ul li a, .starblock
   justify-content: center;
 }
 
-.productList .monybotton button, .shoppingdetails .nextnext .next {
+.productList .product_box .dropdown_list .blockright .byright button, .productList .monybotton button, .shoppingdetails .nextnext .next {
   border: none;
   outline: none;
   background-color: transparent;
@@ -523,10 +523,28 @@ main {
 .productList .product_box .dropdown_list .blockright {
   padding: 0;
 }
-.productList .product_box .dropdown_list .blockright .monylist {
+.productList .product_box .dropdown_list .blockright .byright {
+  width: 48.21429%;
+  float: left;
+  margin-left: 0.89286%;
+  margin-right: 0.89286%;
+  height: 50px;
+}
+.productList .product_box .dropdown_list .blockright .byright button {
+  padding: 0 3%;
   display: block;
   width: 100%;
-  float: none;
+  background-color: #A7017A;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.productList .product_box .dropdown_list .blockright .monylist {
+  display: block;
+  height: 50px;
+  width: 50%;
+  float: left;
 }
 .productList .product_box .dropdown_list .blockright .monylist div {
   text-align: right;
@@ -552,9 +570,8 @@ main {
   margin-left: 5px;
 }
 .productList .product_box .dropdown_list .blockright .monylist h5 span {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 50px;
-  letter-spacing: -1px;
   font-family: "Lato","Century Gothic";
   font-weight: bold;
 }
