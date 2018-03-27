@@ -156,7 +156,10 @@ header{
         ul{
             overflow: hidden;
             li{
-                @include span(4);
+                // @include span(4);
+                width: 160px;
+                margin: 0 10px;
+                float: left;
                 a{
                     @extend %center-center;
                     height: 44px;

@@ -243,10 +243,9 @@ header nav ul {
   overflow: hidden;
 }
 header nav ul li {
-  width: 12.5%;
+  width: 160px;
+  margin: 0 10px;
   float: left;
-  margin-left: 0.89286%;
-  margin-right: 0.89286%;
 }
 header nav ul li a {
   height: 44px;
